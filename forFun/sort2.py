@@ -1,8 +1,12 @@
-# make a random number list.
-numbers = [2, 1, 3, 4, 6, 5]
-#sort_label = ["acs: ", "desc: ", "none: "]
+def main():
+    numbers = [2, 1, 3, 4, 6, 5]
+    
+    print(sort_numbers(numbers, "acs"))
+    print(sort_numbers(numbers, "desc"))
+    print(sort_numbers(numbers, "none"))
 
-def sort_numbers(sorted_versions):
+
+def sort_numbers(numbers, sorted_versions):
     if sorted_versions == "acs":
         return sorted(numbers)
     elif sorted_versions == "desc":
@@ -12,7 +16,6 @@ def sort_numbers(sorted_versions):
     else:
         return "Invalid Input. Use: 'acs', 'desc', 'none'"
     
-print(sort_numbers("acs"))
-print(sort_numbers("desc"))
-print(sort_numbers("none"))
 
+if __name__ == "__main__":
+    main()
