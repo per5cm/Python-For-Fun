@@ -13,8 +13,6 @@ def sort_numbers(numbers, sorted_versions):
         return sorted(numbers, reverse=True)
     elif sorted_versions == "none":
         return numbers
-    else:
-        return "Invalid Input. Use: 'acs', 'desc', 'none'"
     
 
 if __name__ == "__main__":
