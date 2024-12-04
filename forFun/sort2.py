@@ -1,3 +1,5 @@
+# more compact version
+
 def main():
     numbers = [2, 1, 3, 4, 6, 5]
     
