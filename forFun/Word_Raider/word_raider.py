@@ -20,13 +20,13 @@ print(f"You have {max_turns} turns to guess the word!")
 
 while used_turns < max_turns:
     guess = input("Guess a word (or type 'stop' to end game):").lower().strip()
-    print(guess)
     
     if guess == "stop":
+        print("Game stopped. Tanks for playing!")
         break
         
     if len(guess) != len(selected_word) or not guess.isalpha():
-        print("Please enter a 5 letter word.")
+        print(f"Please enter a {len(selected_word)}-letter word.")
         continue
 
 index = 0
