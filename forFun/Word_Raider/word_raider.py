@@ -1,6 +1,6 @@
 import random
 
-game_name = "Word Raider or Wordl"
+game_name = "Word Raider or Guess a Word"
 word_bank = []
 
 with open ("words.txt") as word_file:
