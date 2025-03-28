@@ -1,6 +1,6 @@
 level = 25
-name = "Lopen"
-character_class = "Windrunner"
+name = "Link"
+character_class = "Wind Runner"
 account_active = True
 pvp_rank = "Squire"
 max_health = 79
