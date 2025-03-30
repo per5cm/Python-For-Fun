@@ -2,6 +2,7 @@
 
 import turtle
 import time
+import winsound
 
 wn = turtle.Screen()
 wn.title("Pong by per5cm")
@@ -12,6 +13,11 @@ wn.tracer(0)
 # Score.
 score_a = 0
 score_b = 0
+
+# Sound.
+
+def play_sound():
+    winsound.PlaySound("bounce.wav", winsound.SND_ASYNC)
 
 # Paddle A.
 paddle_a = turtle.Turtle()
@@ -92,6 +98,7 @@ while True:
     # Border checking top and bottom.
     if ball.ycor() > 290 or ball.ycor() < - 290:
         ball.dy *= -1
+        play_sound()
     
     # Border checking left and right.
     if ball.xcor() > 390:
@@ -112,7 +119,9 @@ while True:
     if (ball.xcor() > 340 and ball.xcor() < 350 and ball.dx > 0 and 
         paddle_b.ycor() - 50 < ball.ycor() < paddle_b.ycor() + 50):
         ball.dx *= -1  # Reverse X direction
+        play_sound()
 
     if (ball.xcor() < -340 and ball.xcor() > -350 and ball.dx < 0 and 
         paddle_a.ycor() - 50 < ball.ycor() < paddle_a.ycor() + 50):
-        ball.dx *= -1  # Reverse X direction  
+        ball.dx *= -1  # Reverse X direction
+        play_sound()  
