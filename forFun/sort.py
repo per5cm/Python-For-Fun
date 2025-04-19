@@ -20,6 +20,3 @@ sort_input = input("Enter sorting order(asc, desc, none): ").strip().lower()
 
 sorted_list = sort_list(sort_input)
 print("Sorted List: ", sorted_list)
-   
-  
-
