@@ -125,3 +125,4 @@ while True:
         paddle_a.ycor() - 50 < ball.ycor() < paddle_a.ycor() + 50):
         ball.dx *= -1  # Reverse X direction
         play_sound()  
+        
